@@ -5,8 +5,4 @@ on:
 
 jobs:
   call-release-trigger:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Run release trigger
-        uses: ynput/ci-testing/.github/workflows/release_on_demand.yml@develop
+    uses: ynput/ci-testing/.github/workflows/release_on_demand.yml@develop
