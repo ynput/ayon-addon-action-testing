@@ -6,3 +6,5 @@ on:
 jobs:
   call-release-trigger:
     uses: ynput/ci-testing/.github/workflows/release_on_demand.yml@develop
+    with:
+      gh_token: ${{ secrets.GH_TOKEN }}
