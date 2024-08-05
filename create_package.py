@@ -358,11 +358,10 @@ def copy_addon_package(
     # Copy server content
     for src_file, dst_subpath in files_mapping:
         dst_path: str = os.path.join(addon_output_dir, dst_subpath)
-<<<<<<< HEAD
-=======
         dst_dir: str = os.path.dirname(dst_path)
+
         os.makedirs(dst_dir, exist_ok=True)
->>>>>>> develop
+
         if isinstance(src_file, io.BytesIO):
             with open(dst_path, "wb") as stream:
                 stream.write(src_file.getvalue())
@@ -392,12 +391,7 @@ def create_addon_package(
             else:
                 zipf.write(src_file, dst_subpath)
 
-<<<<<<< HEAD
-    log.info(f"Package created")
-=======
     log.info("Package created")
->>>>>>> develop
-
 
 def main(
     output_dir: Optional[str] = None,
