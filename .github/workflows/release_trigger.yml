@@ -8,5 +8,5 @@ jobs:
     uses: ynput/ci-testing/.github/workflows/release_on_demand.yml@develop
     secrets:
       token: ${{ secrets.YNPUT_BOT_TOKEN }}
-      user: ${{ secrets.GH_USER }}
-      email: ${{ secrets.GH_EMAIL }}
+      user: ${{ secrets.CI_USER }}
+      email: ${{ secrets.CI_EMAIL }}
