@@ -4,10 +4,12 @@ on:
   workflow_dispatch:
     inputs:
       major_version:
-        type: string
+        type: number
       minor_version:
-        type: string
+        type: number
       patch_version:
+        type: number
+      name:
         type: string
 
 jobs:
@@ -15,10 +17,10 @@ jobs:
     # TODO reference proper action
     uses: ynput/ci-testing/.github/workflows/release_on_demand.yml@develop
     with:
-      major:
-      minor:
-      patch:
-      name:
+      major: ${{ inputs.major_version }}
+      minor: ${{ inputs.minor_version }}
+      patch: ${{ inputs.patch_version }}
+      name: 
 
     secrets:
       token: ${{ secrets.YNPUT_BOT_TOKEN }}
