@@ -18,6 +18,7 @@ jobs:
       major:
       minor:
       patch:
+      name:
 
     secrets:
       token: ${{ secrets.YNPUT_BOT_TOKEN }}
