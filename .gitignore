@@ -1,5 +1,7 @@
 # Addon package directory
 /package/*
+/artifact/*
+*.zip
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
