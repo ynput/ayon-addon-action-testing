@@ -20,7 +20,7 @@ jobs:
       major: ${{ inputs.major_version }}
       minor: ${{ inputs.minor_version }}
       patch: ${{ inputs.patch_version }}
-      name: 
+      name: ${{ inputs.name }}
 
     secrets:
       token: ${{ secrets.YNPUT_BOT_TOKEN }}
