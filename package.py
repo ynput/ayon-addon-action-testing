@@ -6,7 +6,7 @@ name = "action-testing"
 title = "Action-Testing"
 
 # Required: Valid semantic version (https://semver.org/)
-version = "0.1.1"
+version = "0.1.1+dev"
 
 # Name of client code directory imported in AYON launcher
 # - do not specify if there is no client code
